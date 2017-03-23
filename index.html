@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link type="text/css" href="css/base.css" rel="stylesheet">
+		<link type="text/css" href="css/mods.css" rel="stylesheet">
+		<link type="text/css" href="css/struct.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Header vert</h1>
+				<p><strong>header h1</strong> { border: 5px groove red; }</p>
+
+			<nav>
+				<h2>Nav</h2>
+					<p>
+						{ background-color: rgba(255, 20, 255, 0.5);
+					  width: 92%;
+						border: 2px dotted black; }
+					</p>
+					<p>(= rose mi-transparent)</p>
+					<br/>
+
+				<div>div 1</div><div>div 2</div><div>div 3</div><div>div 4</div>
+				<p>Ce que donnent les mêmes avec retour à la ligne dans le code (car inline-block): </p>
+				<div>div 1</div>
+				<div>div 2</div>
+				<div>div 3</div>
+				<div>div 4</div>
+
+			</nav>
+
+			<h2>header div</h2>
+				<p>{ float: center;
+					display: inline-block;
+			  	width: 24.5%;
+			  	text-align: center;
+				}</p>
+
+			<br\>
+			<p>(tient compte de l'épaisseur de 1px des borders)</p>
+
+		</header>
+
+
+		<main>
+
+			<h1>Main bleu</h1>
+			<p>contient 4 divs, des p, 1 aside + 1 article : mais float sort l'aside et l'article</p>
+
+			<h2>main div</h2>
+				<p>{ display: inline;
+					<font color="#555">/* float: center;
+					width: 24.5%; */</font>
+					padding: 10px;}
+				</p>
+				<br/>
+
+				<div>div 1</div><div>div 2</div><div>div 3</div><div>div 4</div>
+
+				<p>> en commentaire ce qui n'a aucun effet avec inline, au contraire d'inline-block.</p>
+				<p>+ ajout d'un padding pour voir : a ajouté de l'espace autour du texte, dans chaque div</p>
+				<p>=> conséquence ça déborde du cadre</p>
+
+
+			<aside>
+
+				<h1>aside</h1>
+					<ul>{
+						<li>float: left;</li>
+						<li>width: 30%;</li>
+					  <li>background-color: orange;</li>
+					}</ul>
+
+				<p>* (=tout)
+					<ul>{
+						<li>border: 1px solid grey;</li>
+					  <li>font-family: sans-serif;</li>
+					  <li>font-size: 14px;</li>
+					}</ul>
+				</p>
+
+				<p>p
+					<ul>{
+						<li>text-align: center; </li>
+						<li>margin-top: 2px; </li>
+						<li>margin-bottom: 4px;</li>
+					}</ul>
+				</p>
+
+				<p>ul
+					<ul>{
+						<li>list-style-type: none;</li>
+					 	<li>padding: 8px;</li>
+					 	<li>font-style: italic;</li>
+					}</ul>
+				</p>
+
+			</aside>
+
+			<article>
+
+				<h1>article</h1>
+
+				<p>
+					<ul>{
+				  	<li>float:right;</li>
+				  	<li>width: 68%;</li>
+					  <li>background-color: pink;</li>
+					}</ul>
+				</p>
+
+				<ol>position
+					<li>inline: l'un à côté de l'autre</li>
+					<li>block: l'un en dessous de l'autre</li>
+					<br>float:
+					<li>left / center / right;</li>
+				</ol>
+
+				<div>test rotation div : marche pas</div>
+				<br/>
+				<p> = incompatibilité avec l'attribut inline hérité de main div</p>
+				<h2>test rotation h2 : marche nickel !</h2>
+				<ul> article h2 {
+				  <li>color: red;</li>
+				  <li>border: 5px solid blue;</li>
+				  <li>-ms-transform: rotate(40deg); /* IE 9 */</li>
+				  <li>-webkit-transform: rotate(40deg); /* Safari */</li>
+				  <li>transform: rotate(40deg);</li>
+				}</ul>
+
+			</article>
+
+		</main>
+
+		<footer>
+			<h1>footer</h1>
+
+			<p>paragraphe</p>
+
+			<p>{ background-color: yellow; }</p>
+
+			<p>Le texte de mon footer est "repoussé" par les blocs qui se superposent à mon footer.</p>
+			<p>Le bloc lui prend bien toute la largeur disponible.</p>
+
+			<div>test rotation footer</div>
+			test rotation footer div réussi
+		</footer>
+	</body>
+
+</html>

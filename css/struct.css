@@ -1,0 +1,42 @@
+* {
+  border: 1px solid grey;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+header, main, footer {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightgreen;
+}
+
+main {
+  background-color: lightblue;
+}
+
+footer {
+  background-color: yellow;
+}
+
+nav {
+  background-color: rgba(255,20,255,0.5);
+  width: 92%;
+  border: 2px dotted black;
+}
+
+aside {
+  float: left;
+  width: 30%;
+  background-color: orange;
+}
+
+article {
+  background-color: pink;
+  float:right;
+  width: 68%;
+}

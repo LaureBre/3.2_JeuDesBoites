@@ -1,0 +1,42 @@
+header h1 {
+  border: 5px groove red;
+}
+
+article div {
+  color: red;
+  border: 5px solid red;
+  -ms-transform: rotate(40deg); /* IE 9 */
+  -webkit-transform: rotate(40deg); /* Safari */
+  transform: rotate(40deg);
+}
+
+article h2 {
+  color: red;
+  border: 5px solid blue;
+  -ms-transform: rotate(40deg); /* IE 9 */
+  -webkit-transform: rotate(40deg); /* Safari */
+  transform: rotate(40deg);
+}
+
+footer div {
+  color: red;
+  text-align: center;
+  border: 5px solid green;
+  -ms-transform: rotate(190deg); /* IE 9 */
+  -webkit-transform: rotate(190deg); /* Safari */
+  transform: rotate(190deg);
+}
+
+header div {
+  float: center;
+  display: inline-block;
+  width: 24.5%;
+  text-align: center;
+}
+
+main div {
+  display: inline;
+  padding: 10px;
+  /*float: center;
+  width: 24.5%;*/
+}
