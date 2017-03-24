@@ -5,17 +5,18 @@ header h1 {
 article div {
   color: red;
   border: 5px solid red;
-  -ms-transform: rotate(40deg); /* IE 9 */
-  -webkit-transform: rotate(40deg); /* Safari */
-  transform: rotate(40deg);
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Safari */
+  transform: rotate(30deg);
+  border-radius: 18px;
 }
 
 article h2 {
   color: red;
   border: 5px solid blue;
-  -ms-transform: rotate(40deg); /* IE 9 */
-  -webkit-transform: rotate(40deg); /* Safari */
-  transform: rotate(40deg);
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Safari */
+  transform: rotate(30deg);
 }
 
 footer div {
@@ -40,4 +41,21 @@ main div {
   padding: 10px;
   /*float: center;
   width: 24.5%;*/
+}
+
+main article {
+  float: right;
+}
+
+main aside {
+  float: left;
+}
+
+section article {
+  flex:1;
+}
+
+section aside {
+  width: 10px;
+  flex:1;
 }

@@ -110,32 +110,38 @@
 
 				<h1>article</h1>
 
-				<p>
-					<ul>{
-				  	<li>float:right;</li>
-				  	<li>width: 68%;</li>
-					  <li>background-color: pink;</li>
+					<p>
+						<ul>{
+					  	<li>float:right;</li>
+					  	<li>width: 68%;</li>
+						  <li>background-color: pink;</li>
+						}</ul>
+					</p>
+
+					<ol>position
+						<li>inline: l'un à côté de l'autre</li>
+						<li>block: l'un en dessous de l'autre</li>
+						<br>float:
+						<li>left / center / right;</li>
+					</ol>
+
+					<div>test rotation div : ne marche pas</div>
+
+					<ul>= incompatibilité avec l'attribut inline hérité de main div
+						<li>par contre le </li>
+						<li>border-radius: 18px; </li>
+						<li>fonctionne parfaitement</li>
+					</ul>
+					<h2>test rotation h2 : marche nickel !</h2>
+					<ul> article h2 {
+					  <li>color: red;</li>
+					  <li>border: 5px solid blue;</li>
+					  <li><font color="#555">-ms-transform: rotate(30deg); /* IE 9 */</font></li>
+					  <li><font color="#555">-webkit-transform: rotate(30deg); /* Safari */</font></li>
+					  <li>transform: rotate(30deg);</li>
 					}</ul>
-				</p>
 
-				<ol>position
-					<li>inline: l'un à côté de l'autre</li>
-					<li>block: l'un en dessous de l'autre</li>
-					<br>float:
-					<li>left / center / right;</li>
-				</ol>
-
-				<div>test rotation div : marche pas</div>
-				<br/>
-				<p> = incompatibilité avec l'attribut inline hérité de main div</p>
-				<h2>test rotation h2 : marche nickel !</h2>
-				<ul> article h2 {
-				  <li>color: red;</li>
-				  <li>border: 5px solid blue;</li>
-				  <li>-ms-transform: rotate(40deg); /* IE 9 */</li>
-				  <li>-webkit-transform: rotate(40deg); /* Safari */</li>
-				  <li>transform: rotate(40deg);</li>
-				}</ul>
+				<h3>Et un h3 { transform: skewX(-5deg) skewY(-5deg); }</h3>
 
 			</article>
 
@@ -155,7 +161,29 @@
 
 			<div>test rotation footer</div>
 			test rotation footer div réussi
+
 		</footer>
+
+		<section>
+			<h1>Section</h1>
+			<ul>Ajout d'une section pour en Flex :
+				<li>section { display: flex; }</li>
+				<li>section aside { flex:1; }</li>
+				<li>section article { flex:1; }</li>
+			</ul>
+			<p>Les petites boîtes sont alignées dans la grande !</p>
+			<aside>aside
+				<ul>section aside {
+			  	<li><font color="#555">/* width: 10px; */</font></li>
+			  	<li>flex:1;</li>
+				}</ul>
+			</aside>
+			<article>article
+				<ul>section aside {
+						<li>flex: 1;</li>
+					}</ul>
+			</article>
+		</section>
 	</body>
 
 </html>

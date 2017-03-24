@@ -23,21 +23,25 @@ footer {
   background-color: yellow;
 }
 
+section {
+  display: flex;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
 nav {
+  background-color: rgb(255,20,255);
   background-color: rgba(255,20,255,0.5);
   width: 92%;
   border: 2px dotted black;
 }
 
 aside {
-  float: left;
   width: 30%;
   background-color: orange;
 }
 
 article {
   background-color: pink;
-  float:right;
   width: 68%;
 }
 
