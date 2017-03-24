@@ -131,6 +131,7 @@
 						<li>par contre le </li>
 						<li>border-radius: 18px; </li>
 						<li>fonctionne parfaitement</li>
+						<li>ainsi que le border dashed red</li>
 					</ul>
 					<h2>test rotation h2 : marche nickel !</h2>
 					<ul> article h2 {
@@ -184,6 +185,30 @@
 					}</ul>
 			</article>
 		</section>
+
+		<div id="finale">
+			Div id="finale" avec aside et article flottants
+			<ul>#finale aside, #finale article {
+			    <li>float: left;</li>
+			    <li>color: green;</li>
+			    <li>height: 60px;</li>
+			}</ul>
+
+						<i>Effet</i> : aside et article sortent du cadre, comme auparavant,
+						...jusqu'à ce que j'ajoute un bloc plus large que l'espace qu'il
+						me reste (paragraphe de deux mots), ou bien une division fantôme :
+						<p>< div id="cloture" >< /div ></p>
+						avec côté CSS :
+						<ul>#cloture {
+						    <li>clear: both;</li>
+						}</ul>
+						qui dit : "se place en-dessous<br/> du bloc de gauche et aussi du bloc de droite"<br/>
+			<div id="gagnant">Gagné ! merci Foung ! <br/>THE END</div>
+			<aside>aside</aside>
+			<article>article</article>
+
+			<div id="cloture"></div>
+		</div>
 	</body>
 
 </html>

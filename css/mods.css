@@ -4,7 +4,7 @@ header h1 {
 
 article div {
   color: red;
-  border: 5px solid red;
+  border: 5px dashed red;
   -ms-transform: rotate(30deg); /* IE 9 */
   -webkit-transform: rotate(30deg); /* Safari */
   transform: rotate(30deg);
@@ -58,4 +58,30 @@ section article {
 section aside {
   width: 10px;
   flex:1;
+}
+
+#finale {
+  padding: 0px;
+  background-color: lightgrey;
+  width: 100%;
+}
+
+#finale aside, #finale article {
+  float: left;
+  color: green;
+  height: 60px;
+}
+
+#cloture {
+  clear: both;
+}
+
+#gagnant {
+  color: darkviolet;
+  text-align: center;
+  font-size: 1.2em;
+  border: 3px inset lightblue;
+  -ms-transform: matrix(-0.7,0.2,-0.2,1,-0.3,0.7); /* IE 9 */
+  -webkit-transform: matrix(-0.7,0.2,-0.2,1,-0.3,0.7); /* Safari */
+  transform: matrix(-0.7,0.2,-0.2,1,-0.3,0.7);
 }

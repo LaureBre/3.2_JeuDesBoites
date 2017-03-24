@@ -45,6 +45,6 @@ article {
   width: 68%;
 }
 
-div {
+header div, main div, footer div {
   background-color: rgba(255, 255, 255, 0.4);
 }
